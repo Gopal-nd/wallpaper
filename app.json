@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "wallpaper",
+    "name": "Wallpaper",
     "slug": "wallpaper",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,20 +17,26 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.gopal2005.wallpaper"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/icon.png"
     },
     "plugins": [
       "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "60682f59-5740-4aa9-901c-2b19c8b0d1eb"
+      }
     }
   }
 }

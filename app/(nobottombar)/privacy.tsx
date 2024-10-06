@@ -1,6 +1,7 @@
 import { Button, Text, View } from 'react-native';
 
 import { useRouter } from 'expo-router';
+import { ThemedSafeAreaView } from '@/components/ThemedSafeAreaView';
 
 
 export default function Account() {
@@ -11,9 +12,13 @@ export default function Account() {
   };
 
   return (
+    <ThemedSafeAreaView style={{ flex: 1 }}>
+
+
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
       <Button title="Go to first screen" onPress={() => handleDismiss(3)} />
-        <Text>Account</Text>
+        <Text>Privecy</Text>
     </View>
+    </ThemedSafeAreaView>
   );
 }
